@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>API Project</title>
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Anton|Fira+Sans+Condensed" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
+
+    <link rel="stylesheet" href="styles.css">
+
+
+</head>
+
+<body>
+    <div id="header" class="container-fluid">
+
+        <div class="vertical text-center">
+            <h1>#MyLittleFinder</h1>
+        </div>
+    </div>
+
+
+    <section id="navigation">
+        <nav class="navbar navbar-expand-lg navbar-dark ">
+            <p class="navbar-brand">MyLittleFinder</p>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menuBar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menuBar">
+
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="" data-target="#about-project" data-toggle="modal">About Project</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://dictionaryapi.com/products/index" target="blank">API
+                            Documentation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="" data-target="#wire-frame" data-toggle="modal">Wire Frame
+                            Concept</a>
+                    </li>
+                </ul>
+
+            </div>
+
+        </nav>
+    </section>
+
+    <div class="container section">
+        <div class="row">
+            <div class="card-deck">
+                <div class=""></div>
+                <div class="card mb-4">
+                    <img src="images/card-dictionary.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Dictionary Search</h5>
+                        <p id="search-description" class="card-text">Search for any word that is in the english
+                            dictionary
+                            and see it displayed.
+                        </p>
+                        <input class="form-control form-control-lg search" type="text" id="search"
+                            placeholder="Type Word Here...">
+
+                    </div>
+                    <div class="card-footer text-center">
+                        <button href="" class="btn btn-success">Dictionary Search</button>
+                    </div>
+                </div>
+                <div id="dictionary" class="col-md-8">
+                    <h2 id="dictionaryWord">Your Dictionary Word Here</h2>
+                    <p id="dictionarySyllables">Syllables</p>
+                    <h4 id="header-short-def">Short Definition</h4>
+                    <ul>
+                        <li id="shortDefinition">Definition Here</li>
+                    </ul>
+                    <button id="sound-button" type="button" class="btn btn-success btn-lg btn-block">Hear How the Word
+                        Sounds</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="about-project" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">About Project</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <img src="images/dictionary-logo.png" class="img-fluid" alt="Webster's Dictionary Logo">
+                            </div>
+                            <div class="col-md-8">
+                                <p>This is an example API of fetching data from merriam-webster. All you have to do
+                                    is type the word
+                                    you are wanting to know the definition of in the search box and the results will
+                                    appear. </p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Model 2 - Wireframe -->
+    <div class="modal fade" id="wire-frame" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Wire Frame Model</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div>
+                            <img src="images/starts-with-idea.png" class="img-fluid" alt="concept">
+                        </div>
+                        <div>
+                            <p>It all starts with an idea. Here is a list of things that are shown in this project. </p>
+                            <ul>
+                                <li>Get data using an API Key</li>
+                                <li>Offering suggestions if word is misspelled</li>
+                                <li>Evenlistiners for 'Enter Key' and Buttons clicks</li>
+                                <li>Displaying buttons when sound file is detected</li>
+                                <li>With suggestive spelling it is clickable</li>
+                            </ul>
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="container-fluid text-center">
+        Webster-Dictionary-API
+
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+    <script src="index.js"></script>
+</body>
+
+</html>
