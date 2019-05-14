@@ -24,7 +24,7 @@ h4 {
 
 }
 
-#navigation{
+#navigation {
     background-color: rgb(73, 54, 37);
 }
 
@@ -32,10 +32,10 @@ h4 {
     padding-top: 15%;
     color: rgb(214, 203, 193);
     text-shadow:
-    -1px -1px 0 #000,
-    1px -1px 0 #000,
-    -1px 1px 0 #000,
-    1px 1px 0 #000;
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
 }
 
 .section {
@@ -47,16 +47,17 @@ h4 {
     visibility: hidden;
 }
 
-.pointer{
-    cursor:pointer;
+.pointer {
+    cursor: pointer;
 }
+
 footer {
 
     color: white;
     background-color: rgb(73, 54, 37);
     font-size: 1.2em;
-   padding: 10px 0 10px;
-   margin-top:10px;
+    padding: 10px 0 10px;
+    margin-top: 10px;
 }
 
 @media screen and (max-width: 728px) {
@@ -65,13 +66,14 @@ footer {
         height: 200px;
 
     }
+
     #header {
         background-size: auto;
         background-attachment: scroll;
         background-position: center;
         height: auto;
-        margin-bottom:0;
-    
+        margin-bottom: 0;
+
     }
 
-  }
+}
