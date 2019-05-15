@@ -210,7 +210,9 @@ function fetchNewWord(longURL) {
         });
         let addPhoto = document.createElement("img")
         addPhoto.setAttribute("src", "images/tyler.jpg")
+        addPhoto.setAttribute('class','img-fluid')
         shortDefinitionID.appendChild(addPhoto)
+
         makeVisible()
         soundButton.style.visibility = "hidden"
 
